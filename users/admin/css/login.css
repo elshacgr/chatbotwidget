@@ -1,0 +1,102 @@
+.divider:after,
+
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	min-height: 100%;
+	color: #555;
+}
+.page{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+h1{
+	/*margin: 40px 0;*/
+	margin-top: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+form{
+	margin: 50px auto;
+	max-width: 350px;
+}
+label{
+	display: block;
+	padding-bottom: 5px;
+	position: relative;
+	padding-left: 5px;
+	font-size: 17px;
+}
+label span{
+	position: absolute;
+	font-size: 16px;
+	padding-right: 5px;
+	/*font-style: italic;*/
+	color: #999;
+	right: 0;
+}
+input{
+	padding: 10px;
+	width:  100%;
+	margin-bottom: 10px;
+	border:  thin solid #d4d4d4;
+	font-size: 16px;
+	outline: none;
+	margin-bottom: 30px;
+}
+input:focus{
+	border-color: orange;
+}
+
+.error{
+	color: #af4242;
+	background-color: #fde8ec;
+	padding: 10px;
+	display: none;
+	transform: translateY(-20px);
+	margin-bottom: 20px;
+}
+
+.toggle-btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+#btn-login-as {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	border-color: #000;
+	background: linear-gradient(to right, #7F53AC, #647DEE);
+	border-radius:  10px;
+	
+	transition: .5s;
+}
